@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slider="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apexis.viewplayground.Main">
+
+    <com.apexis.viewplayground.ScoringSlider
+        android:id="@+id/scoringSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        slider:barColor="#BEBEBE"
+        slider:barFillColor="@android:color/holo_blue_dark"
+        slider:barFillHeight="4dp"
+        slider:barHeight="0.5dp"
+        slider:currentValue="4"
+        slider:intervalLeftColor="#8CBDD1"
+        slider:intervalRightColor="#325084"
+        slider:labelLeft="n/a"
+        slider:labelLeftColor="#CDCDCD"
+        slider:maxValue="10"
+        slider:minValue="0"
+        slider:textSize="20dp"
+        slider:thumbColor="#325084"
+        slider:thumbRadius="10dp"
+        slider:thumbTextColor="@android:color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/scoringSlider"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/black" />
+</RelativeLayout>
